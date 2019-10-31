@@ -20,6 +20,15 @@ nav .navbar-nav li a{
     color: white;
 }
 
+
+.nav-item > a:hover {
+  color: black !important;
+}
+
+.nav-item-active {
+  color: blue !important;
+}
+
 /* extra small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   img {
@@ -29,14 +38,14 @@ nav .navbar-nav li a{
 /* small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   img {
-    height: 150px;
+    height: 100px;
   }
 }
 
 /* medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   img {
-    height: 200px;
+    height: 110px;
   }
   .collapse {
     display: none!important;
@@ -46,13 +55,13 @@ nav .navbar-nav li a{
 /* large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   img {
-    height: 270px;
+    height: 120px;
   }
 }
 
 /* extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   img {
-    height: 300px;
+    height: 130px;
   }
 }
