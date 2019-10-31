@@ -1,0 +1,58 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("img/header1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+}
+
+
+nav .navbar-nav li a{
+  color: white !important;
+  }
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+}
+
+/* extra small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  img {
+    height: 80px;
+  }
+}
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  img {
+    height: 150px;
+  }
+}
+
+/* medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  img {
+    height: 200px;
+  }
+  .collapse {
+    display: none!important;
+  }
+}
+
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  img {
+    height: 270px;
+  }
+}
+
+/* extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  img {
+    height: 300px;
+  }
+}
