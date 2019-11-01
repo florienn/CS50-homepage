@@ -5,43 +5,47 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet"/>
-      <title>My Webpage</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <title>Oh Wonder</title>
     </head>
+
     <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tour.html">TOUR</a>
+            <li class="nav-item-active">
+              <a class="nav-link" href="index.html">HOME
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="music.html">MUSIC</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="videos.html">VIDEOS
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tour.html">TOUR</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Full Page Image Header with Vertically Centered Content -->
-    <header class="masthead">
+    <!-- https://startbootstrap.com/snippets/full-image-header/ -->
+    <header class="masthead" id="videos">
       <div class="container h-100">
+        <img src="img/logo.gif" class="sub-logo"/>
         <div class="row h-100 align-items-center">
           <div class="col-12 text-center">
-            <h1>Videos</h1>
+            <h2 class="header-title">Videos</h2>
           </div>
         </div>
       </div>
@@ -50,17 +54,53 @@
     <!-- Page Content -->
     <section class="py-5">
       <div class="container">
-        <h2 class="font-weight-light">Home</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-
+        <h3>MUSIC VIDEOS</h3>
+        <h5>Latest - oldest</h5>
+        <div class="row">
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Y00Pkm-PnXs" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ksKVVnELXHY" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/g8RmfDg45SE" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hu9pTGFjA4c" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xPGREQvK-dQ" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VgwcPiCjQ-0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zLAhRiUeJ8E" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <footer><p id="footer">&copy; <script> document.write(new Date().getFullYear()); </script>, Florien Altena</p></footer>
   </body>
 </html>

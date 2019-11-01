@@ -1,20 +1,26 @@
-@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+// Google fonts
+@import url('https://fonts.googleapis.com/css?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+$accent-color1: #00ff37;
+$accent-color2: #cc34eb;
+$body-font: "Space Mono", monospace;
+$header-font: "Georgia", "Vidaloka", serif;
+
 p, h3, th, td, h4, h5 {
-  font-family: "Space Mono", monospace;
+  font-family: $body-font
 }
 
 a {
-  color: #00ff37;
+  color: $accent-color1;
 }
 
-a:hover {
-  color: #cc34eb;
+a:hover{
+  color: $accent-color2;
   text-decoration: underline;
 }
 
 h3 {
-  color: #00ff37;
+  color: $accent-color1;
   text-align: center;
 }
 
@@ -32,9 +38,10 @@ h5 {
 
 nav {
   font-size: 1.3em;
-}
-nav ul, nav li {
-  color: black;
+
+  ul, li {
+    color: black
+  }
 }
 
 p {
@@ -47,7 +54,7 @@ p {
 .arrow:before {
   position: absolute;
   left: 50%;
-  top: 250%;
+  top: 250%
 }
 
 .arrow {
@@ -90,10 +97,11 @@ p {
 .header-title {
   color: white;
   position: absolute;
-  font-family: "Georgia", "Vidaloka", serif;
+  font-family: $header-font;
   font-size: 190px;
   left: -30px;
   bottom: -310px;
+
 }
 
 .sub-logo {
@@ -109,17 +117,19 @@ p {
   min-height: 500px;
 }
 
-#music, #tour, #videos {
+#music {
   background-image: url("img/header2.jpg");
   height: 50vh;
   min-height: 500px;
 }
 
 #videos {
+  @extend #music;
   background-image: url("img/header3.png");
 }
 
 #tour {
+  @extend #music;
   background-image: url("img/header4.jpg");
 }
 
@@ -137,6 +147,7 @@ p {
     transform: translate(-10px, -10px);
   }
 }
+
 /* extra small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   img {
@@ -148,6 +159,7 @@ p {
     right: 0;
   }
 }
+
 /* small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   img {
@@ -159,6 +171,7 @@ p {
     left: 20px;
   }
 }
+
 /* medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   img {
@@ -169,18 +182,19 @@ p {
     height: 60px;
     left: 1;
   }
+
 }
+
 /* large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   img {
     height: 120px;
   }
 }
+
 /* extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   img {
     height: 130px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
