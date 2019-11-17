@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Vidaloka&display=swap");
+p, h3, th, td, h4, h5 {
+  font-family: "Space Mono", monospace;
+}
+
+a {
+  color: #00ff37;
+}
+
+a:hover {
+  color: #cc34eb;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #00ff37;
+  text-align: center;
+}
+
+h4 {
+  font-size: 14px;
+  text-decoration: underline;
+  position: absolute;
+}
+
+h5 {
+  text-decoration: underline;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+nav {
+  font-size: 1.3em;
+}
+nav ul, nav li {
+  color: black;
+}
+
+p {
+  text-align: center;
+  margin: 80px 0 30px 0;
+}
+
+/* header arrow, https://freebiesupply.com/blog/css-arrows/ */
+.arrow,
+.arrow:before {
+  position: absolute;
+  left: 50%;
+  top: 250%;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+
+.arrow:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+
+.masthead {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.row {
+  margin-bottom: 30px;
+}
+
+.header-title {
+  color: white;
+  position: absolute;
+  font-family: "Georgia", "Vidaloka", serif;
+  font-size: 190px;
+  left: -30px;
+  bottom: -310px;
+}
+
+.sub-logo {
+  height: 60px;
+  position: absolute;
+  left: 1;
+  top: 1;
+}
+
+#index {
+  background-image: url("img/header1.jpg");
+  height: 100vh;
+  min-height: 500px;
+}
+
+#music, #tour, #videos {
+  background-image: url("img/header2.jpg");
+  height: 50vh;
+  min-height: 500px;
+}
+
+#videos {
+  background-image: url("img/header3.png");
+}
+
+#tour {
+  background-image: url("img/header4.jpg");
+}
+
+#footer {
+  text-align: right;
+  margin-right: 8px;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+}
+/* extra small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  img {
+    height: 80px;
+  }
+
+  .sub-logo {
+    height: 50px;
+    right: 0;
+  }
+}
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  img {
+    height: 100px;
+  }
+
+  .sub-logo {
+    height: 50px;
+    left: 20px;
+  }
+}
+/* medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  img {
+    height: 110px;
+  }
+
+  .sub-logo {
+    height: 60px;
+    left: 1;
+  }
+}
+/* large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  img {
+    height: 120px;
+  }
+}
+/* extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  img {
+    height: 130px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
