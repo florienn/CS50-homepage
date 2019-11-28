@@ -1,56 +1,52 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link href="style.css" rel="stylesheet"/>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <title>My Webpage</title>
-    </head>
-    <body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item-active">
+              <a class="nav-link" href="index.html">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="music.html">MUSIC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">VIDEOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tour.html">TOUR</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <!-- navigation -->
-      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="navbar-collapse collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item-active">
-                <a class="nav-link" href="index.html">HOME
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="music.html">MUSIC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="videos.html">VIDEOS</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="tour.html">TOUR</a>
-              </li>
-            </ul>
+    <!-- https://startbootstrap.com/snippets/full-image-header/ -->
+    <header class="masthead" id="tour">
+      <div class="container h-100">
+        <img src="img/logo.gif" class="sub-logo" alt="Oh Wonder logo"/>
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h2 class="header-title">Tour</h2>
           </div>
         </div>
-      </nav>
-
-      <!-- https://startbootstrap.com/snippets/full-image-header/ -->
-      <header class="masthead" id="tour">
-        <div class="container h-100">
-          <img src="img/logo.gif" class="sub-logo"/>
-          <div class="row h-100 align-items-center">
-            <div class="col-12 text-center">
-              <h2 class="header-title">Tour</h2>
-            </div>
-          </div>
-        </div>
-      </header>
-
-    <!-- page content -->
+      </div>
+    </header>
     <section class="py-5">
       <div class="container">
         <h3>2020 WORLD TOUR*</h3>
@@ -64,90 +60,92 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">January 10</th>
+              <td>January 10</td>
               <td>Secret venue</td>
               <td>Camden, London, UK</td>
             </tr>
             <tr>
-              <th scope="row">January 11</th>
+              <td>January 11</td>
               <td>OLT rivierenhof</td>
               <td>Antwerp, Belgium</td>
             </tr>
             <tr>
-              <th scope="row">January 18</th>
+              <td>January 18</td>
               <td>A Summer's Tale</td>
               <td>Luhmuhlen, Germany</td>
             </tr>
             <tr>
-              <th scope="row">January 17</th>
+              <td>January 17</td>
               <td>Debaser Strand</td>
               <td>Stockholm, Sweden</td>
             </tr>
             <tr>
-              <th scope="row">February 7</th>
+              <td>February 7</td>
               <td>Tavastia</td>
               <td>Helsinki, Finland</td>
             </tr>
             <tr>
-              <th scope="row">January 24</th>
+              <td>January 24</td>
               <td>Paradiso Grote Zaal</td>
               <td>Amsterdam, Netherlands</td>
             </tr>
             <tr>
-              <th scope="row">January 25</th>
+              <td>January 25</td>
               <td>Club Hollywood</td>
               <td>Tallinn, Estonia</td>
             </tr>
             <tr>
-              <th scope="row">February 8</th>
+              <td>February 8</td>
               <td>X-TRA</td>
               <td>Zurich, Switzerland</td>
             </tr>
             <tr>
-              <th scope="row">February 14</th>
+              <td>February 14</td>
               <td>Barby Tel Aviv</td>
               <td>Tel Aviv-Yafo, Israel</td>
             </tr>
-              <th scope="row">February 18</th>
+            <tr>
+              <td>February 18</td>
               <td>MUV Hall</td>
               <td>Mapogu, South Korea</td>
             </tr>
             <tr>
-              <th scope="row">February 26</th>
+              <td>February 26</td>
               <td>Ogden Theatre</td>
               <td>Denver, CO</td>
             </tr>
             <tr>
-              <th scope="row">March 1</th>
+              <td>March 1</td>
               <td>August Hall</td>
               <td>San Francisco, CA</td>
             </tr>
             <tr>
-              <th scope="row">March 17</th>
+              <td>March 17</td>
               <td>Oakwood Beach</td>
               <td>Chicago, IL</td>
             </tr>
             <tr>
-              <th scope="row">March 18</th>
+              <td>March 18</td>
               <td>Fox Theatre Detroit</td>
               <td>Detroit, MI</td>
             </tr>
             <tr>
-              <th scope="row">March 21</th>
+              <td>March 21</td>
               <td>Budweiser Stage </td>
               <td>Toronto, Canada</td>
             </tr>
-              <th scope="row">April 8</th>
+            <tr>
+              <td>April 8</td>
               <td>SCÈNE HYDRO-QUÉBEC</td>
               <td>Quebec, Canada</td>
             </tr>
             <tr>
-              <th scope="row">April 9</th>
+              <td>April 9</td>
               <td>Newport Music Hall</td>
               <td>Columbus, OH</td>
             </tr>
             <tr>
-              <th scope="row">April 11</th>
+              <td>April 11</td>
               <td>Delmar Hall</td>
               <td>Saint Louis, MO</td>
             </tr>
